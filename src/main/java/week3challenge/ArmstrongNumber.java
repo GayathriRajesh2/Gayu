@@ -1,0 +1,23 @@
+package week3challenge;
+
+import java.util.Scanner;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int m;
+		int sum=0;
+		for(int i=0; i<=2; i++)
+		{
+			m = (int) (n/(Math.pow(10, i)));
+			sum = (int) (sum+Math.pow(m%10, 3));
+		}
+		
+		
+		sc.close();
+	}
+
+}
